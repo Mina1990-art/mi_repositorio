@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fontawasome -->
+    <script src="https://kit.fontawesome.com/56806f01ea.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+    <!-- CSS Only -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Contacto</title>
+  </head>
+  <body>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Romanella</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Novedades</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="productos.html">Apliques de pared</a></li>
+                      <li><a class="dropdown-item" href="productos.html">Lamparas de techo</a></li>
+                      <li><a class="dropdown-item" href="productos.html">Veladores</a></li>
+                      <li><a class="dropdown-item" href="productos.html">Lamparas de pie</a></li>
+                      <li><a class="dropdown-item" href="productos.html">Todos los productos</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quienes_somos.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+      </header>
+
+      <!--Carousel informativo-->
+      <section class="container text-center ">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner d-flex align-items-center info-section">
+              <div class="carousel-item active">
+                <p>COVID-19: <a href="">Información</a> sobre entregas</p>
+              </div>
+              <div class="carousel-item">
+                <p>Ampliamos nuestro periodo de devolución a 60 días <a href="">Mas informacion</a></p>
+              </div>
+              <div class="carousel-item">
+                <p>10% de descuento abonando mediante transferencia bancaria <a href="">Mas información</a> </p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!--formulario de contacto-->
+      <section class="contact-form">
+        <form class="row g-3 ">
+            <div class="col-md-6">
+              <label for="inputNombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inputNombre">
+            </div>
+            <div class="col-md-6">
+              <label for="inputApellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="inputApellido">
+            </div>
+            <div class="col-12">
+              <label for="inputEmail4" class="form-label">Correo electronico</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="...@gmail.com">
+            </div>
+            <div class="col-12">
+              <label for="inputTelefono" class="form-label">Telefono de contacto</label>
+              <input type="text" class="form-control" id="inputTelefono" placeholder="+54...">
+            </div>
+            <div class="form-floating comment-box">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Comments</label>
+            </div>
+            <!--boton de enviar correo-->
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+      </section>
+
+      <!--Whatsapp-->
+      <a href="">
+        <i class="fab fa-whatsapp whatsapp-format"></i>
+      </a>
+
+      <!--Pie de pagina-->
+      <footer>
+        <!--DIV - contenedor de pie de pagina-->
+        <div class="footer">
+            <!--DIV - Listado de accesos rapidos-->
+            <div class="footer-list">
+                <ul class="footer-list-first">
+                    <li>TARJETAS DE REGALO</li>
+                    <li>NOVEDADES</li>                      
+                    <li>RESGISTRATE PARE RECIBIR OFERTAS</li>
+                    <li>COMENTARIOS</li>
+                </ul>
+                <ul class="footer-list-second">
+                    <li>AYUDA</li>
+                    <li>Estado del pedido</li>
+                    <li>Envios y entregas</li>
+                    <li>Devoluciones</li>
+                    <li>Opciones de pago</li>
+                    <li>Contacto</li>
+                </ul>
+                <ul class="footer-list-third">
+                  <li>ACERCA DE ROMANELLA</li>
+                  <li>Quienes somos</li>
+                  <li>Trabaja con nosotros</li>
+                  <li>Inversores</li>
+                  <li>Sostebliidad</li>
+              </ul>
+            </div>
+            <!--DIV - redes sociales  iconos de Fontawesome-->
+            <div class="footer-socials">
+                <a href="https://twitter.com"> <i class="fa fa-twitter"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+
+        </div>
+        <!--Sub-footer-->
+        <!--lo hacemos fuera del otro div porque de lo contrario de pondiran uno al lado del otro cuando les demos  formato con el CSS-->
+        <div class="footer-subfooter">
+            <div class="footer-subfooter-first">
+              <i class="fas fa-map-marker-alt"></i>
+                <p>Argentina</p>
+                <p>&#169;2021 ROMANELLA S.A. Todos los derechos reservados</p>
+            </div>
+            <!--parte navegable-->
+            <nav class="footer-subfooter-second">
+                <ul>
+                    <li>Guia</li>
+                    <li>Términos de uso</li>
+                    <li>Términos de ventas</li>
+                    <li>Aviso Legal</li>
+                    <li>Política de privacidad y cookies </li>
+                    <li>Configuracióon de cookies</li>
+                </ul>
+            </nav>
+        </div>
+      </footer>
+
+    <!-- JavaScript: Bootstrap Bundle with Popper 
+    para que los components de interaccion y movimiento puedan funcionar-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+    crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>
