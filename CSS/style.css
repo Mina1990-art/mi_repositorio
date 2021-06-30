@@ -56,6 +56,13 @@
   filter: grayscale(80);
 }
 
+/**video**/
+.videos {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 /*** CONTACTO-HTML ***/
 .contact-form {
   margin: 2rem;
@@ -69,6 +76,21 @@
 .nosotros-container {
   margin-top: 1rem;
   margin-bottom: 2rem;
+}
+
+.profile-text-form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.profile-text-form font {
+  size: 1rem;
+}
+
+.mision-vision-title-form {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .card-box-style {
@@ -87,7 +109,6 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*formato para iconos de redes sociales*/
 }
 .footer .footer-list {
   margin: 2rem;
@@ -105,18 +126,30 @@ footer {
   /*separa el contenido del elemento de abajo*/
   margin-bottom: 1rem;
 }
-.footer .footer-socials {
-  margin-top: 2rem;
-  margin-right: 2rem;
-}
-.footer .footer-socials i {
-  font-size: 1.7rem;
-  color: #b9b8b8;
-  cursor: pointer;
-  margin: 0 0.6rem;
-}
-.footer .footer-socials i:hover {
+
+.footer-link-main {
+  /*Aummento del peso de la letra*/
+  font-weight: 500;
+  /*reduccion de tamaño*/
+  font-size: 0.8rem;
+  text-decoration: none;
   color: #ffffff;
+  padding: 0;
+}
+
+.footer-link-other {
+  /*Aummento del peso de la letra*/
+  font-weight: 500;
+  /*reduccion de tamaño*/
+  font-size: 0.8rem;
+  color: #b9b8b8;
+  letter-spacing: 0rem;
+  display: flex;
+  /*formato para que se siga mostrando como  columan pero  ocupe todo su espacio*/
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 0;
 }
 
 .footer-list-first {
@@ -129,6 +162,10 @@ footer {
   /*formato para que se siga mostrando como  columan pero  ocupe todo su espacio*/
   flex-direction: column;
   justify-content: space-between;
+  color: #ffffff;
+}
+.footer-list-first li:hover a:hover {
+  color: #ffffff;
 }
 
 .footer-list-second {
@@ -136,6 +173,7 @@ footer {
   font-weight: 500;
   /*reduccion de tamaño*/
   font-size: 0.8rem;
+  color: #b9b8b8;
   letter-spacing: 0rem;
   display: flex;
   /*formato para que se siga mostrando como  columan pero  ocupe todo su espacio*/
@@ -146,7 +184,15 @@ footer {
   /*Estilo solo al primer item de la segunda sub lista*/
   /*: Aplicar estilos al a todos los ementos menos al primero de la segunda  sublista*/
 }
+.footer-list-second li {
+  color: #b9b8b8;
+  cursor: pointer;
+  margin: 0 0.6rem;
+}
 .footer-list-second li:first-child {
+  color: #ffffff;
+}
+.footer-list-second li:hover a:hover {
   color: #ffffff;
 }
 
@@ -155,6 +201,7 @@ footer {
   font-weight: 500;
   /*reduccion de tamaño*/
   font-size: 0.8rem;
+  color: #b9b8b8;
   letter-spacing: 0rem;
   display: flex;
   /*formato para que se siga mostrando como  columan pero  ocupe todo su espacio*/
@@ -170,6 +217,24 @@ footer {
   color: #ffffff;
 }
 .footer-list-third li:first-child {
+  color: #ffffff;
+}
+.footer-list-third li:hover a:hover {
+  color: #ffffff;
+}
+
+/*formato para iconos de redes sociales*/
+.footer-socials {
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+.footer-socials i {
+  font-size: 1.7rem;
+  color: #b9b8b8;
+  cursor: pointer;
+  margin: 0 0.6rem;
+}
+.footer-socials i:hover {
   color: #ffffff;
 }
 
@@ -207,7 +272,7 @@ footer {
   color: #b9b8b8;
   cursor: pointer;
 }
-.footer-subfooter-second ul li:hover {
+.footer-subfooter-second ul li:hover a:hover {
   color: #ffffff;
 }
 
@@ -219,6 +284,25 @@ footer {
   bottom: 3rem;
   right: 0;
   z-index: 6;
+}
+
+/*** INSTALACIONES ***/
+.instalaciones-container {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.instalaciones-text-form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.instalaciones-text-form font {
+  size: 1rem;
+}
+.instalaciones-text-form li {
+  margin-left: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
