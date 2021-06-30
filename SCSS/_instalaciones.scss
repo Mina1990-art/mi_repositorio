@@ -1,11 +1,11 @@
-/*** QUIENES SOMOS ***/
+/*** INSTALACIONES ***/
 
-.nosotros-container{
+.instalaciones-container{
     margin-top: $margin-size;
     margin-bottom: $margin-size * 2;
 }
 
-.profile-text-form{
+.instalaciones-text-form{
     margin-top: $margin-size;
     margin-bottom: $margin-size;
     padding-left: 3rem;
@@ -13,10 +13,8 @@
     font{
         size: 1rem;
     }
+    li{
+        margin-left:2rem ;
+    }
 
-}
-
-.mision-vision-title-form{
-    padding-left: 3rem;
-    padding-right: 3rem;
 }

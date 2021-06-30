@@ -6,6 +6,22 @@ footer{
     color: $white;
 }
 
+@mixin footer-text {
+    font: {
+      /*Aummento del peso de la letra*/
+      weight: 500;
+      /*reduccion de tamaño*/
+      size: $font-size-footer;
+
+    }
+    color:$grey;
+    letter-spacing: 0rem;
+    display: flex;
+    /*formato para que se siga mostrando como  columan pero  ocupe todo su espacio*/
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
 /*formato para clase  footer y  sub clases*/
 .footer {
     display: flex;
@@ -28,8 +44,99 @@ footer{
             /*separa el contenido del elemento de abajo*/
             margin-bottom: 1rem;
         }
+        
+        }
     }
 
+    .footer-link-main{
+        font: {
+            /*Aummento del peso de la letra*/
+            weight: 500;
+            /*reduccion de tamaño*/
+            size: $font-size-footer;
+      
+          }
+        text-decoration: none;
+        color: $white;
+        padding: 0;
+    }
+
+    .footer-link-other{
+        @include footer-text;
+        text-decoration: none;
+        padding: 0;
+    }
+
+    .footer-list-first {
+        /*Aummento del peso de la letra*/
+        font-weight: 500;
+        /*reduccion de tamaño*/
+        font-size: 0.8rem;
+        letter-spacing: 0rem;
+        display: flex;
+        /*formato para que se siga mostrando como  columan pero  ocupe todo su espacio*/
+        flex-direction: column;
+        justify-content: space-between;
+        color: $white;
+
+        li:hover {
+            a:hover{
+                color: $white;
+            }
+        } 
+      }
+
+    .footer-list-second {
+        @include footer-text;
+        /*color de  fuente para la segunda lista*/
+        color: $grey;
+
+        li{
+            color: $grey;
+            cursor: pointer;
+            margin:0 0.6rem;
+        }
+    
+        /*Estilo solo al primer item de la segunda sub lista*/
+        /*: Aplicar estilos al a todos los ementos menos al primero de la segunda  sublista*/
+
+        li:first-child {
+            
+            color: $white;
+        }
+
+       li:hover {
+            a:hover{
+                color: $white;
+            }
+        }  
+        
+    }
+    
+    .footer-list-third {
+        @include footer-text;
+        color: $grey;
+    
+        /*Efecto para todos SALVO al primer elmento de la segunda  sublista,*/
+        /*con esto cuando se pasa el cursor por los  elementos de la segunda  sublista, se van poniendo en blanco, pero el primer elemento de la lista no se altera*/
+        li:not(:first-of-type):hover {
+            color: $white;
+        }
+    
+        /*Estilo solo al primer item de la segunda sub lista*/
+        /*: Aplicar estilos al a todos los ementos menos al primero de la segunda  sublista*/
+        li:first-child {
+        color: $white;
+        }
+
+        li:hover {
+            a:hover{
+                color: $white;
+            }
+        } 
+    }
+
+    
     /*formato para iconos de redes sociales*/
     .footer-socials {
         margin-top: 2rem;
@@ -44,62 +151,10 @@ footer{
 
         i:hover {
             color: $white;
-        }
-        
+        }  
     }
 
-}
 
-
-
-@mixin footer-text {
-    font: {
-      /*Aummento del peso de la letra*/
-      weight: 500;
-      /*reduccion de tamaño*/
-      size: $font-size-footer;
-    }
-    letter-spacing: 0rem;
-    display: flex;
-    /*formato para que se siga mostrando como  columan pero  ocupe todo su espacio*/
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-.footer-list-first {
-    @include footer-text;
-
-}
-
-.footer-list-second {
-    @include footer-text;
-    /*color de  fuente para la segunda lista*/
-    color: $grey;
-
-    /*Estilo solo al primer item de la segunda sub lista*/
-    /*: Aplicar estilos al a todos los ementos menos al primero de la segunda  sublista*/
-    li:first-child {
-        color: $white;
-    }
-    
-}
-
-.footer-list-third {
-    @include footer-text;
-    color: $grey;
-
-    /*Efecto para todos SALVO al primer elmento de la segunda  sublista,*/
-    /*con esto cuando se pasa el cursor por los  elementos de la segunda  sublista, se van poniendo en blanco, pero el primer elemento de la lista no se altera*/
-    li:not(:first-of-type):hover {
-        color: $white;
-    }
-
-    /*Estilo solo al primer item de la segunda sub lista*/
-    /*: Aplicar estilos al a todos los ementos menos al primero de la segunda  sublista*/
-    li:first-child {
-    color: $white;
-    }
-}
 
 
 /*sub footer*/
@@ -140,7 +195,9 @@ footer{
         cursor: pointer;
     }
     li:hover {
-        color: $white;
+        a:hover{
+            color: $white;
+            }
     }
     }
 
