@@ -50,7 +50,8 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                <h1>Romanella</h1>
+                <h1 class="d-none">Romanella</h1>
+                <img src="logor.jpg" alt="Logo Romanella">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -68,12 +69,11 @@
                       Productos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="productos.html">Apliques de pared</a></li>
-                      <li><a class="dropdown-item" href="productos.html">Lamparas de techo</a></li>
-                      <li><a class="dropdown-item" href="productos.html">Veladores</a></li>
-                      <li><a class="dropdown-item" href="productos.html">Lamparas de pie</a></li>
+                      <li><a class="dropdown-item" href="productos_de_pared.html">Apliques de pared</a></li>
+                      <li><a class="dropdown-item" href="productos_colgantes.html">Lamparas de techo</a></li>
+                      <li><a class="dropdown-item" href="productos_veladores.html">Veladores</a></li>
+                      <li><a class="dropdown-item" href="productos_de_pie.html">Lamparas de pie</a></li>
                       <li><a class="dropdown-item" href="productos.html">Todos los productos</a></li>
-                      <li><a class="dropdown-item" href="productos.html">Otros</a></li>
                       
                     </ul>
                   </li>
@@ -98,13 +98,13 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner d-flex align-items-center info-section">
               <div class="carousel-item active">
-                <p>COVID-19: <a href="">Información</a> sobre entregas</p>
+                <p>COVID-19: <a href="terminos_y_condiciones.html">Información</a> sobre entregas</p>
               </div>
               <div class="carousel-item">
-                <p>Ampliamos nuestro periodo de devolución a 60 días <a href="">Mas informacion</a></p>
+                <p>Ampliamos nuestro periodo de devolución a 60 días <a href="terminos_y_condiciones.html">Mas informacion</a></p>
               </div>
               <div class="carousel-item">
-                <p>10% de descuento abonando mediante transferencia bancaria <a href="">Mas información</a> </p>
+                <p>10% de descuento abonando mediante transferencia bancaria <a href="terminos_y_condiciones.html">Mas información</a> </p>
               </div>
             </div>
           </div>
@@ -162,7 +162,7 @@
                     <!--**COL** con  esto definimos las cantida de columnas por pantalla. Es necesario definir COL - La pantalla - y el numero de columnas del grid-->
                     <!--Recrodar que los contenedores flexibles tienen una propiedas que se llama flex wrap, y por default  vienen activado,
                     por lo cual cuando no encuentra mas espacio un elemento se pasa para  abajo-->
-                    <a href="productos.html">
+                    <a href="productos_colgantes.html">
                         <img src="portada/techo1.jpg" class="card-img " alt="lampara colgante de techo">
                         <!--**IMG  FLUID -  hace a la imagen responsive  para los distintos dispositivos*-->
                         <div class="card-img-overlay img-fluid">
@@ -172,7 +172,7 @@
                 </div>
                 <!--Pared-->
                 <div class="card col-xl-4 col-lg-4 col-md-6 text-white card-efect" style="width: 18rem;">
-                    <a href="productos.html">
+                    <a href="productos_de_pared.html">
                         <img src="portada/pared1.jpg" class="card-img" alt="aplique de pared rectancular con base dorada con dos luces, luz calida">
                         <div class="card-img-overlay img-fluid">
                             <h5 class="card-title card-title-format">Pared</h5>
@@ -181,7 +181,7 @@
                 </div>
                 <!--Velador-->
                 <div class="card col-xl-4 col-lg-4 col-md-6 text-white card-efect" style="width: 18rem;">
-                    <a href="productos.html">
+                    <a href="productos_veladores.html">
                         <img src="portada/velador2.jpg" class="card-img " alt="velador con pantalla conca en color curdo sobre jarron de ceramica rustico beige">
                         <div class="card-img-overlay img-fluid">
                             <h5 class="card-title card-title-format">Velador</h5>
@@ -190,7 +190,7 @@
                 </div>            
                 <!--Pie-->
                 <div class="card col-xl-4 col-lg-4 col-md-6 text-white card-efect" style="width: 18rem;">
-                    <a href="productos.html">
+                    <a href="productos_de_pie.html">
                         <img src="portada/pie1.jpg" class="card-img " alt="lampara de pue modera en hierro forjado con 4 tulipas">
                         <div class="card-img-overlay img-fluid">
                             <h5 class="card-title card-title-format">Pie</h5>
@@ -222,7 +222,7 @@
                     <img src="portada/dormitorio.jpg" class="card-img " alt="lampara colgante tipo araña en dormitorio en tonos giseses">
                     <!--**IMG  FLUID -  hace a la imagen responsive  para los distintos dispositivos*-->
                     <div class="card-img-overlay img-fluid">
-                        <h5 class="card-title card-title-format">Domitorio</h5>
+                        <h5 class="card-title card-title-format">Dormitorio</h5>
                     </div>
                 </a>
             </div>
@@ -257,6 +257,54 @@
        
       </section>
 
+
+      <section class="videos_container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-xl-4 col-lg-4 col-md-6">
+              <h3 class="text-center titulo-selector">¿Tenes dudas en que tipo de iluminacion necesitas?</h2>
+              <h3 class="text-center titulo-selector">los siguientes videos  pueden ayudarte...</h2>              
+          </div>
+        </div>
+        <!--Videos utiles-->
+        <div class="videos" >
+          <!--Videos 1-->
+          <iframe 
+              width="315" height="200" 
+              src="https://www.youtube.com/embed/XBnT2r5SQms" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+          </iframe>
+          <!--Videos 2-->
+          <iframe width="315" height="200" 
+            src="https://www.youtube.com/embed/3kaaGU7ScCU" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <!--Videos 3-->
+            <iframe 
+            width="315" height="200" 
+            src="https://www.youtube.com/embed/PFTN76kYbEk" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <!--Videos 4-->
+          <iframe 
+            width="315" height="200" 
+            src="https://www.youtube.com/embed/KmeqSqI7_RI" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+      </section>
+
+
       <!--Whatsapp-->
       <a href="">
         <i class="fab fa-whatsapp whatsapp-format"></i>
@@ -269,25 +317,22 @@
               <!--DIV - Listado de accesos rapidos-->
               <div class="footer-list">
                   <ul class="footer-list-first">
-                      <li>TARJETAS DE REGALO</li>
-                      <li>NOVEDADES</li>                      
-                      <li>RESGISTRATE PARE RECIBIR OFERTAS</li>
-                      <li>COMENTARIOS</li>
+                    <li><a  class="footer-link-main" href="404.html">REGISTRATE</a></li>
+                    <li><a  class="footer-link-main" href="404.html">NOVEDADES</a></li>
+                    <li><a  class="footer-link-main" href="productos.html">PRODUCTOS</a></li>                      
+                    <li><a  class="footer-link-main" href="contacto.html">CONTACTO</a></li>
                   </ul>
                   <ul class="footer-list-second">
-                      <li>AYUDA</li>
-                      <li>Estado del pedido</li>
-                      <li>Envios y entregas</li>
-                      <li>Devoluciones</li>
-                      <li>Opciones de pago</li>
-                      <li>Contacto</li>
+                    <li>AYUDA</li>
+                    <li><a class="footer-link-other" href="terminos_y_condiciones.html">Opciones de pago</a></li>
+                    <li><a class="footer-link-other" href="terminos_y_condiciones.html">Envios, entregas y devololuciones</a></li>
+                    <li><a class="footer-link-other" href="instalaciones.html">Instalaciones</a></li>
                   </ul>
                   <ul class="footer-list-third">
                     <li>ACERCA DE ROMANELLA</li>
-                    <li>Quienes somos</li>
-                    <li>Trabaja con nosotros</li>
-                    <li>Inversores</li>
-                    <li>Sostebliidad</li>
+                    <li><a  class="footer-link-other" href="quienes_somos.html">Quienes somos</a></li>
+                    <li><a  class="footer-link-other" href="quienes_somos.html">Misión</a></li>
+                    <li><a  class="footer-link-other" href="quienes_somos.html">Visión</a></li>
                 </ul>
               </div>
               <!--DIV - redes sociales  iconos de Fontawesome-->
@@ -310,12 +355,10 @@
               <!--parte navegable-->
               <nav class="footer-subfooter-second">
                   <ul>
-                      <li>Guia</li>
-                      <li>Términos de uso</li>
-                      <li>Términos de ventas</li>
-                      <li>Aviso Legal</li>
-                      <li>Política de privacidad y cookies </li>
-                      <li>Configuracióon de cookies</li>
+                    <li><a class="footer-link-other" href="terminos_y_condiciones.html">Terminos y condiciones</a></li>
+                    <li><a class="footer-link-other" href="terminos_y_condiciones.html">Avisos Legales</a></li>
+                    <li><a class="footer-link-other" href="terminos_y_condiciones.html">Politica de privacidad</a></li>
+                    <li><a class="footer-link-other" href="terminos_y_condiciones.html">Cokies</a></li>
                   </ul>
               </nav>
           </div>

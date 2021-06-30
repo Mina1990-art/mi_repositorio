@@ -42,7 +42,7 @@
 
     <!-- CSS Only -->
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Contacto</title>
+    <title>Productos</title>
   </head>
   <body>
       <header>
@@ -108,34 +108,56 @@
           </div>
       </section>
 
-      <!--formulario de contacto-->
-      <section class="contact-form">
-        <form class="row g-3 ">
-            <div class="col-md-6">
-              <label for="inputNombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="inputNombre">
-            </div>
-            <div class="col-md-6">
-              <label for="inputApellido" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="inputApellido">
-            </div>
-            <div class="col-12">
-              <label for="inputEmail4" class="form-label">Correo electronico</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="...@gmail.com">
-            </div>
-            <div class="col-12">
-              <label for="inputTelefono" class="form-label">Telefono de contacto</label>
-              <input type="text" class="form-control" id="inputTelefono" placeholder="+54...">
-            </div>
-            <div class="form-floating comment-box">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">Comments</label>
-            </div>
-            <!--boton de enviar correo-->
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-        </form>
+      <!--Listado de productos con imagenes - Cards-->
+      <section class="container">
+        <div class="row d-flex justify-content-center">
+            <!-- **ROW**  - este es un  div contenedor de productos para poder utliizar  grlilas - Por eso utliizamos  ROW, que habliita las 12 columnas del grid system-->
+            <!-- **D-FLEX  JUSTIFY-CONTENT-CENTER   centramos los ementos dentro del  div  con esto todas las imagenes  de ajustan dentro del contenedor-->
+
+
+            <!--Producto 10-->
+            <div class="card col-xl-4 col-lg-4 col-md-6 card-box-style">
+              <img src="productos/pared_euro.jpg" class="card-img-top img-fluid element-content" alt="lampara de pared Euro origen España">
+              <div class="card-body">
+              <h5 class="card-title">Lampara de pared Euro</h5>
+              <p class="card-text">Origen: España</p>
+              <p class="card-text">Precio: $1000</p>
+              <a href="https://www.mercadopago.com.ar/" class="btn btn-primary">Comprar</a>
+              </div>
+          </div>
+            <!--Producto 11-->
+            <div class="card col-xl-4 col-lg-4 col-md-6 card-box-style">
+              <img src="productos/pared_nickel.jpg" class="card-img-top img-fluid element-content" alt="Lampara de pared nickel origen estados unidos">
+              <div class="card-body">
+              <h5 class="card-title">Lampara de pared Nickel</h5>
+              <p class="card-text">Origen: Estados Unidos</p>
+              <p class="card-text">Precio: $1000</p>
+              <a href="https://www.mercadopago.com.ar/" class="btn btn-primary">Comprar</a>
+              </div>
+          </div>
+            <!--Producto 12-->
+            <div class="card col-xl-4 col-lg-4 col-md-6 card-box-style">
+              <img src="productos/pared_swing.jpg" class="card-img-top img-fluid element-content" alt="Lampara de pared swing origen estados unidos">
+              <div class="card-body">
+              <h5 class="card-title">Lampara de pared Swing</h5>
+              <p class="card-text">Origen: Estados Unidos</p>
+              <p class="card-text">Precio: $1000</p>
+              <a href="https://www.mercadopago.com.ar/" class="btn btn-primary">Comprar</a>
+              </div>
+          </div>
+            <!--Producto 13-->
+            <div class="card col-xl-4 col-lg-4 col-md-6 card-box-style">
+              <img src="productos/pared_trixie.jpg" class="card-img-top img-fluid element-content" alt="Lampara de pared Trixie origen estados unidos">
+              <div class="card-body">
+              <h5 class="card-title">Lampara de pared Trixie</h5>
+              <p class="card-text">Origen: Estados Unidos</p>
+              <p class="card-text">Precio: $1000</p>
+              <a href="https://www.mercadopago.com.ar/" class="btn btn-primary">Comprar</a>
+              </div>
+          </div>
+
+        </div>
+       
       </section>
 
       <!--Whatsapp-->
@@ -150,10 +172,10 @@
             <!--DIV - Listado de accesos rapidos-->
             <div class="footer-list">
                 <ul class="footer-list-first">
-                    <li><a class="footer-link-main" href="404.html">REGISTRATE</a></li>
-                    <li><a class="footer-link-main" href="404.html">NOVEDADES</a></li>
-                    <li><a class="footer-link-main" href="productos.html">PRODUCTOS</a></li>                      
-                    <li><a class="footer-link-main" href="contacto.html">CONTACTO</a></li>
+                  <li><a class="footer-link-main" href="404.html">REGISTRATE</a></li>
+                  <li><a class="footer-link-main" href="404.html">NOVEDADES</a></li>
+                  <li><a class="footer-link-main" href="productos.html">PRODUCTOS</a></li>                      
+                  <li><a class="footer-link-main" href="contacto.html">CONTACTO</a></li>
                 </ul>
                 <ul class="footer-list-second">
                   <li>AYUDA</li>
@@ -170,10 +192,10 @@
             </div>
             <!--DIV - redes sociales  iconos de Fontawesome-->
             <div class="footer-socials">
-                <a href="https://twitter.com"> <i class="fa fa-twitter"></i></a>
-                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-                <a href="https://pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+              <a href="https://twitter.com"> <i class="fa fa-twitter"></i></a>
+              <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+              <a href="https://pinterest.com"><i class="fab fa-pinterest-p"></i></a>
             </div>
 
         </div>
@@ -192,6 +214,7 @@
                   <li><a class="footer-link-other" href="terminos_y_condiciones.html">Avisos Legales</a></li>
                   <li><a class="footer-link-other" href="terminos_y_condiciones.html">Politica de privacidad</a></li>
                   <li><a class="footer-link-other" href="terminos_y_condiciones.html">Cokies</a></li>
+
                 </ul>
             </nav>
         </div>
